@@ -26,3 +26,7 @@ Spring Boot JPA |
  - 트랜잭션,도메인 기능 간의 순서를 보장하는 Service  
  
  ![web_hierarchy](/image/web_hierarchy.png)
+
+
+   ##### JPA Auditing 이란?  
+    Audit은 감시하다, 감사하다라는 뜻으로 Spring Data JPA에서 시간에 대해서 자동으로 값을 넣어주는 기능.
