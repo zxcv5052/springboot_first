@@ -13,6 +13,7 @@ Library | 설명
 ------------ | ------------- 
 Lombok | 
 Jquery | 
+Spring Boot JPA | 
 
 ----
 #### Gradle 이란?   
