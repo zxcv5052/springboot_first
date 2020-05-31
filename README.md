@@ -15,6 +15,13 @@ Lombok |
 Jquery | 
 
 ----
- Gradle 이란?   
-&nbsp;&nbsp;&nbsp;&nbsp; Gradle은 Groovy를 기반으로 Ant와 Maven과 같은 이전 세대 빌드 도구의 단점을 보완을 한 빌드 도구.   
-&nbsp;&nbsp;&nbsp;&nbsp; 의존성이나 플러그인 설정 등과 같은 빌드에 필요한 설정을 하게 된다.
+#### Gradle 이란?   
+ - Gradle은 Groovy를 기반으로 Ant와 Maven과 같은 이전 세대 빌드 도구의 단점을 보완을 한 빌드 도구.   
+ - 의존성이나 플러그인 설정 등과 같은 빌드에 필요한 설정을 하게 된다.  
+  
+#### API를 만들기 위한 클래스 3가지.  
+ - Request 데이터를 받을 Dto  
+ - API 요청을 받을 Controller  
+ - 트랜잭션,도메인 기능 간의 순서를 보장하는 Service  
+ 
+ ![web_hierarchy](/image/web_hierarchy.png)
