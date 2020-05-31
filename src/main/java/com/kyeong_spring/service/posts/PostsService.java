@@ -27,14 +27,14 @@ public class PostsService {
     public Long update(Long id, PostsUpdateRequestDto requestDto){
         Posts posts = postsRepository.findById(id).orElseThrow(()->new IllegalAccessError("해당 사용자가 존재 하지 않습니다. id =" + id));
 
-        posts.update(requestDto.getTitle(), requestDto.getContent());
+        posts.update(requestDto.getTitle(), requestDto.getContent(), requestDto.getAuthor());
 
         return id;
     }
 
     public PostsResponseDto findById(Long id)
     {
-        Posts entity = postsRepository.findById(id).orElseThrow(()->new IllegalArgumentException("해다 사용자가 없습니다. id ="+id));
+        Posts entity = postsRepository.findById(id).orElseThrow(()->new IllegalArgumentException("해당 사용자가 없습니다. id ="+id));
 
         return new PostsResponseDto(entity);
     }
@@ -44,5 +44,12 @@ public class PostsService {
         return postsRepository.findAllDesc().stream()
                 .map(PostsListResponseDto::new)
                 .collect(Collectors.toList());
+    }
+
+    @Transactional
+    public void delete(Long id){
+        Posts posts = postsRepository.findById(id)
+                .orElseThrow(()-> new IllegalArgumentException("해당 사용자가 존재하지 않습니다."));
+        postsRepository.delete(posts);
     }
 }
