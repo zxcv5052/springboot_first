@@ -39,3 +39,7 @@ Spring Boot JPA |
 @LastModifiedDate		 | 조회한 Entity의 값을 변경할 때 시간이 자동 저장
 
 
+#### 템플릿 엔진이란?  
+     지정된 템플릿 양식과 데이터가 합쳐져 HTML문서를 출력하는 소프트웨어이다.   
+        EX) JSP, Freemarker // Server 템플릿 엔진   
+           React, Vue_View 등등.. // Client 템플릿 엔진  
