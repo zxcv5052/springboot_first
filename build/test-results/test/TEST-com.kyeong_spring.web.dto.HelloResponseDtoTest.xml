@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kyeong_spring.web.dto.HelloResponseDtoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-04T04:45:36" hostname="DESKTOP-TOLI8CV" time="0.005">
+  <properties/>
+  <testcase name="룸북_기능_테스트" classname="com.kyeong_spring.web.dto.HelloResponseDtoTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

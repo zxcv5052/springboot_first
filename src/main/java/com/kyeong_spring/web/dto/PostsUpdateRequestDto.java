@@ -3,7 +3,6 @@ package com.kyeong_spring.web.dto;
 import com.kyeong_spring.domain.posts.Posts;
 import lombok.Builder;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 
 @Getter
 public class PostsUpdateRequestDto {
